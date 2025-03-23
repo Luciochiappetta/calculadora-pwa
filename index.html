@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Digital</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#00bcd4" />
+</head>
+<body>
+  <div class="calculadora">
+    <button class="toggle-theme">🌙 Modo Escuro</button>
+    <input type="text" class="display" disabled />
+    <div class="botoes">
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="/">/</button>
+
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="*">*</button>
+
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="-">-</button>
+
+      <button data-key="0">0</button>
+      <button data-key=".">.</button>
+      <button data-key="=">=</button>
+      <button data-key="+">+</button>
+
+      <button data-key="C" class="clear">C</button>
+      <button data-key="backspace" class="backspace">←</button>
+    </div>
+
+    <div class="historico">
+      <h3>Histórico</h3>
+      <ul class="lista-historico"></ul>
+    </div>
+
+    <button class="exportar-historico">📁 Exportar Histórico</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
